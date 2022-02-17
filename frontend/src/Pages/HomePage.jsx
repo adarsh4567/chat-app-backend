@@ -14,7 +14,7 @@ const HomePage = () => {
    }
   }, [navigate]);
   
-  return <Container marginLeft='150px' maxW='xl' centerContent>
+  return <Container maxW='xl' centerContent>
      <Box
      d='flex'
      justifyContent='center'
