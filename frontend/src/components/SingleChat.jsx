@@ -13,7 +13,7 @@ import Lottie from 'react-lottie'
 import animationData from '../animation/typing.json'
 
 const ENDPOINT = "https://chat-always.herokuapp.com/";
-var socket,selectedChatCompare;
+var socket,selectedChatCompare
 
 const SingleChat = ({fetchAgain,setFetchAgain}) => {
     const {user,selectedChat,setSelectedChat,notification,setNotification} = ChatState();
