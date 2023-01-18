@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node backEnd/server.js"
-    
-    
+    "start": "node backEnd/server.js"    
     
   },
   "author": "adarsh_kumar",
