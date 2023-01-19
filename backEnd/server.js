@@ -1,6 +1,7 @@
 const express = require('express');
 const chats = require('./data');
 const app = express();
+const cors = require('cors')
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 const userRoutes = require('./routes/userRoutes');
@@ -13,6 +14,9 @@ const path  = require('path');
 dotenv.config();
 connectDB();
 app.use(express.json());
+app.use(cors({
+    origin: 'https://chat-app-frontend-rust.vercel.app'
+}));
 
 app.get('/',(req,res)=>{
     res.send('api is running');
